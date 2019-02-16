@@ -2,7 +2,7 @@ var cache1="c1";
 this.addEventListener("install",function(event){
 	event.waitUntil(
 		caches.open(cache1).then(cache=>{
-			cache.addAll([
+			cache.addAll(["form.css","resume.css"
 				])
 		})
 		);
